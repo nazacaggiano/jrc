@@ -1,0 +1,587 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+header { 
+    background: #fff;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  
+.logo {
+      width: 131.75px;
+      height: 27.2px;
+  }
+  
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+nav ul li{
+    margin: 0 5px;
+  }
+
+nav ul li a{
+    color: #191D20;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+nav ul li a.active,
+nav ul li a:hover{
+    color: #DC2E2E;
+  }
+  nav .menu-btn i{
+    color: #191D20;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #fff;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 14px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color:#DC2E2E;
+    }
+
+    .marcas { 
+        margin-left: 10px!important;
+        margin-right: 10px!important;
+        height: 110px!important;
+        overflow: hidden!important;
+    }
+    .marcas img {
+        width: 60px!important;
+        height: 60px!important;
+        margin-top: 20px!important;
+        margin-bottom: 20px!important;
+        margin-left: 10px!important;
+        margin-right: 10px!important;
+    }
+    .footer {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+    }
+    .contenedor-footer  {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+  }
+
+.fotos-trabajos img {
+    width: 33.33%;
+}
+
+input[type="checkbox"]{
+    display: none;
+  }
+
+
+a { 
+    color: #191D20;
+    text-decoration: none;
+  }
+
+a:hover { 
+    color: #DC2E2E;
+    text-decoration: none;
+}
+
+a:active { 
+    color: #DC2E2E;
+}
+
+body { 
+    font-family: Overpass; 
+    background: #F4F5F6;
+    font-weight: 300;
+    width: 100%;
+}
+
+h1 { 
+    font-size: 32px;
+    font-weight: 400
+}
+h2 { 
+    font-size: 24px;
+    font-weight: 400
+}
+h3 { 
+    font-size: 18px;
+    font-weight: 400
+}
+h4 { 
+    font-size: 14px;
+    font-weight: 400
+}
+h5 { 
+    font-size: 12px;
+    font-weight: 400
+}
+h6 { 
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+.marcas { 
+    background: linear-gradient(90deg, #DC2E2E 0%, #D12323 100%);
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    filter: drop-shadow(0px 5px 50px rgba(0, 0, 0, 0.25));
+}
+
+.marcas img { 
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.servicios {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+.servicio-caja { 
+    background-color: #fff;
+    border-radius: 15px;
+    width: 360px;
+    height: 250px;
+    padding: 30px;
+    box-shadow: #13131305 10px 20px 35px;
+}
+
+.servicio-caja:hover { 
+    background-color: #191D20;
+    color :#fff;
+    transition: 0.4s;
+}
+
+.servicio-caja h2 {
+    margin-bottom: 10px;
+}
+
+
+.servicio-caja p { 
+    font-size: 15px;
+    font-weight: 300;
+    color: #848F9C;
+}
+
+.servicios__titulo {
+    margin-bottom: 50px;
+}
+
+.servicio-caja__icono {
+    width: 35px;
+    height: 35px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.trabajos { 
+ background-color:#191D20;
+ color:#fff;
+ padding-top: 50px;
+}
+
+.contenedor-trabajos {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fotos-trabajos {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.banner-principal { 
+    background-image: url("images/fibra-carbono-background.jpg");
+    background-size: cover;
+    color:#fff;
+    padding: 70px;
+    height: 520px;
+    width: 100%;
+   }
+
+.Hero { 
+    margin-top: 100px
+}
+
+.Hero__titulo {
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.Hero__texto {
+    font-weight: 300;
+}
+.contacto  {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    background-image: url("images/fibra-carbono-background.jpg");
+    background-size: cover;
+}
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+.footer-logo {
+    width: 131.75px;
+    height: 27.2px;
+}
+
+.footer__deco {
+    background: linear-gradient(90deg, #131313 77%, #DC2E2E 77%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    width: 100%;
+    height: 30px;
+}
+
+input {
+    border-color: #434A54;
+    background-color: #191D20;
+    color: #fff; 
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Overpass;
+    margin: 5px;
+}
+
+.visuallyhidden {
+    display: none;
+}
+
+
+.icon-ig {
+    width: 40px;
+    height: 40px;
+}
+
+.footer li {
+    list-style-type: none;
+    color: #848F9C;
+}
+
+.white-text  {
+    color:#fff;
+}
+
+/* Animación para deslizar hacia arriba con transaparencia */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#fff;
+    color:#131313;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    box-shadow: #13131305 10px 20px 35px;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
+  .mapa  {
+      width: 100%;
+      z-index: 2;
+    }
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.caja-contacto {
+    background-color: #fff;
+    width: 40%;
+    padding: 40px;
+    margin-top:-150px;
+    z-index: 3;
+    box-shadow: #13131305 10px 20px 35px;
+}
+
+.caja-infocontacto {
+    background-color: #DC2E2E;
+    width: 20%;
+    padding: 40px;
+    margin-top:-150px;
+    z-index: 3;
+    box-shadow: #13131305 10px 20px 35px;
+}
+
+.caja-infocontacto__titulo {
+    margin-bottom:30px;
+}
+
+li {
+    list-style-type: none;
+    }
+.heroservicio {
+    padding-top: 140px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.contenedor-heroservicio {
+display: flex;
+justify-content: center;
+background-color: #fff;
+box-shadow: #13131305 10px 20px 35px;
+
+}
+
+.contenedor-heroservicio__imagen {
+    background-image: url(/Images/maxim-hopman-Q_l5NzA8o4Y-unsplash.jpg);
+    background-size: cover;
+    width: 50%;
+}
+
+.contenedor-heroservicio__texto {
+    margin: 100px;
+    width: 50%;
+}
+.contenedor-heroservicio__texto p {
+    margin-bottom: 35px;
+}
+
+.button {
+    color: #fff;
+    font-weight: 400;
+    background-color: #D12323;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 12px;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #e74444;
+}
+
+.section-trabajos {
+    padding-top:140px;
+}
+
+.caja-covid {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 360px;
+    height: 250px;
+    padding: 30px;
+    box-shadow: #13131305 10px 20px 35px;
+}
+
+.caja-covid:hover {
+    background-color: #191D20;
+    color :#fff;
+    transition: 0.4s;
+}
+
+.caja-covid__icono {
+    width: 35px;
+    height: 35px;
+}
+.caja-covid__titulo {
+ line-height: 1.3;
+ margin-bottom: 10px;
+}
+
+.contenedor-covid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.caja-covid p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #848F9C;
+}
+
+.contenedor-herocovid__imagen {
+    background-image: url(/Images/covid/Foto\taller.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.contenedor-herocovid__texto {
+    margin: 100px;
+    width: 50%;
+}
+.contenedor-herocovid__texto p {
+    margin-bottom: 35px;
+}
+
+.herocovid{
+    padding-top: 140px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.contenedor-herocovid {
+display: flex;
+justify-content: center;
+background-color: #fff;
+box-shadow: #13131305 10px 20px 35px;
+}
+
+.covid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+
